@@ -1,10 +1,10 @@
 const loginForm = document.querySelector(".login-form");
 loginForm.addEventListener('submit', submitHadler);
 const userProfile = {};
-function submitHadler (event) {
-    event.preventDefault;
+function submitHadler(event) {
+    event.preventDefault();
 
-const email = event.currentTarger.elements.email;
+const email = event.currentTarget.elements.email;
 const password = event.currentTarget.elements.password;
 
 if (email.value === "" || password.value === "") {
@@ -14,5 +14,5 @@ if (email.value === "" || password.value === "") {
     userProfile.password = password.value;
     console.log(userProfile);
 }
-    event.currentTarger.reset();
+    event.currentTarget.reset();
 }

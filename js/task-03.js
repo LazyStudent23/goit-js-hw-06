@@ -16,7 +16,7 @@ const gallery = document.querySelector(".gallery");
 function createMarkup(arr) {
   const markup = arr.map(
     ({ url, alt }) =>
-  `<li><img src = "${url}" alt = "${alt}" width = "700" class = "image">
+  `<li><img src = "${url}" alt = "${alt}" width = "500" class = "image">
   </li>`)
     .join("");
   gallery.insertAdjacentHTML("afterbegin", markup);
