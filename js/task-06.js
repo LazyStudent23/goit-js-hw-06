@@ -12,5 +12,4 @@ function validation (event) {
         inputArea.classList.add("invalid");
     }
 }
-
 inputArea.addEventListener('blur', validation);
